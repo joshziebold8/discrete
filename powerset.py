@@ -2,10 +2,11 @@ class PowerSet:
     
     def powerset(self, input_set):
         allSubsets = []
-        for i in range(2**len(list(input_set))):
+        inputList = list(input_set)
+        for i in range(2**len(inputList)):
             subset = []
-            for j in range(len(list(input_set))):
+            for j in range(len(inputList)):
                 if i & 1 << j:
-                    subset.append(list(input_set[j]))
+                    subset.append(inputList[j])
             allSubsets.append(subset)
-        return set(allSubsets)
+        return allSubsets
