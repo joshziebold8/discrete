@@ -7,4 +7,4 @@ class Clock:
             if mins_passed == max_mins: position = 0
             position += 1
             i+=1
-        return position
+        return divmod(position,60)
