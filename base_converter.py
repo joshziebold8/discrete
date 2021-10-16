@@ -9,6 +9,6 @@ class BaseConverter:
 		x = sum
 		ans = ''
 		while x != 0:
-			ans + x%to_base
+			ans += str(x%to_base)
 			x/=to_base
 		return ans[::-1]
