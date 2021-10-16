@@ -7,7 +7,7 @@ class BaseConverter:
 			sum += pow(from_base, x) * int(i)
 			x -= 1
 		x = sum
-		ans = ''
+		ans = ""
 		while x != 0:
 			ans += str(x%to_base)
 			x/=to_base
