@@ -10,5 +10,5 @@ class BaseConverter:
 		ans = 0
 		while x != 0:
 			ans += x%to_base
-			x/=to_base
+			x = x//to_base
 		return str(ans)[::-1]
