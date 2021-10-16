@@ -6,4 +6,9 @@ class BaseConverter:
 		for i in num: #to decimal
 			sum += pow(from_base, x) * int(i)
 			x -= 1
-		return sum
+		x = sum
+		ans = ''
+		while x != 0:
+			ans + x%to_base
+			x/=to_base
+		return ans[::-1]
