@@ -9,5 +9,5 @@ class Jumble():
 			if str.count(i) == 1 or temp.count(i) == 0:
 				temp += i
 				x+=1
-		##print(x, len(str))
+		print(x, len(str))
 		return math.factorial(len(str)) / math.factorial(len(str)-x)
