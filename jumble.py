@@ -2,17 +2,11 @@ class Jumble():
 	
 	def get_total_distinct_combinations(self, input_string):
 		import math
-		str = input_string.lower()
-		x = 0
-		y = 0
-		temp = ""
-		for i in str:
-			if str.count(i) > 1 and temp.count(i) == 0:
-				y += 1
-			if str.count(i) == 1 or temp.count(i) == 0:
-				temp += i
-				x+=1
-		print(x, len(str))
-		if y == 0:
-			return math.factorial(len(str)) / math.factorial(len(str)-x)
-		return (math.factorial(len(str)) / math.factorial(len(str)-x)) / y
+		count = [0] * 26
+		for i in range(0, len(input_string)):
+			if (input_string[i] >= 'a'):
+				count[(ord)(input_string[i]) - 97] += 1
+		factorial = 1
+		for i in range(0, 26) :
+			factorial *= math.factorial(count[i])
+		return math.factorial(len(input_string)) / factorial
