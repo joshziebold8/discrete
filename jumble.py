@@ -8,5 +8,5 @@ class Jumble():
 			if input_string.count(i) == 1 or temp.count(i) == 0:
 				temp += i
 				x+=1
-		print(temp)
+		print(x)
 		return math.factorial(len(input_string)) / math.factorial(len(input_string)-x)
