@@ -15,4 +15,4 @@ class Jumble():
 		print(x, len(str))
 		if y == 0:
 			return math.factorial(len(str)) / math.factorial(len(str)-x)
-		return (math.factorial(len(str)) / math.factorial(len(str)-x))/y
+		return (math.factorial(len(str)) / math.factorial(len(str)-x))
