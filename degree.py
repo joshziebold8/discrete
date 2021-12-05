@@ -11,5 +11,5 @@ class Graph():
 					out[i] += 1
 					inD[j] += 1
 		for i in range(len(A)):
-			ans[i] = (out[i],inD[i])	
+			ans[i] = (inD[i],out[i])	
 		return ans
