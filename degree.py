@@ -4,7 +4,7 @@ class Graph():
 		''' A here is the adjacency matrix '''
 		out = [0 for _ in range(len(A))]
 		inD = [0 for _ in range(len(A))]
-		ans = []
+		ans = [0 for _ in range(len(A))]
 		for i in range(len(A)):
 			for j in range(len(A)):
 				if A[i][j] == 1:
