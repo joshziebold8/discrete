@@ -10,5 +10,6 @@ class Graph():
 				if A[i][j] == 1:
 					out[i] += 1
 					inD[j] += 1
+		for i in range(len(A)):
 			ans[i] = (out[i],inD[i])	
 		return ans
